@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="describtion" content="Intro DOM och JavaScript">
+    <meta name="author" content="Stina TEINF21">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro DOM och JavaScript</title>
+</head>
+<body>
+
+    <h1>JavaScript</h1>
+
+        <div class="container">
+            <textarea class="describtion"></textarea>
+            <button id="show-text" type="button">Show text</button>
+            <button id="clear-text" type="button">Clear text</button>
+        </div>
+
+    <script>
+        const describtion = document.body.querySelector(".describtion");
+
+        const showText = document.body.querySelector("#show-text");
+        showText.addEventListener("click", () => {
+            describtion.textContent = "Once opon a time...";
+        });
+
+        const clearText = document.body.querySelector("#clear-text");
+        clearText.addEventListener("click", () => {
+            describtion.textContent = "";
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
